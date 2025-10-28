@@ -1,0 +1,46 @@
+# 💻 Node.js & general
+node_modules/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🔐 Environment files
+.env
+.env.local
+.env.*.local
+
+# ⚡ Next.js build output
+.next/
+out/
+
+# 🛠️ TypeScript
+dist/
+*.tsbuildinfo
+
+# 💣 Misc system files
+.DS_Store
+Thumbs.db
+
+# 💡 IDE/editor settings
+.vscode/
+.idea/
+
+# 💬 Mac-specific
+.AppleDouble
+.LSOverride
+
+# 💾 Optional if you use coverage tools (like Jest)
+coverage/
+
+# 📦 Package manager lockfiles (optional: if using both npm & yarn and want to avoid conflicts)
+package-lock.json
+yarn.lock
+
+# 🧑‍💻 Specific to frontend (if needed)
+frontend/.next/
+frontend/out/
+
+# 🧑‍💻 Specific to backend (if needed)
+backend/dist/
