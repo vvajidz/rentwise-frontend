@@ -1,11 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.pinimg.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.imgur.com",
+      },
+    ],
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
