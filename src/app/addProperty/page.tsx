@@ -79,7 +79,7 @@ const PropertyForm: React.FC = () => {
     { id: 'Gym', label: 'Gym Access', icon: Users }
   ];
 
-  const handleInputChange = (field: keyof FormData, value: any) => {
+  const handleInputChange = (field: keyof FormData, value: string | number | boolean | string[]) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
