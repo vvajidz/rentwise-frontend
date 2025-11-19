@@ -17,8 +17,8 @@ export const fetchStats = async (): Promise<Stats> => {
   console.log('🔵 Fetching stats...');
   try {
     const propertyRes = await axios.get('/property/allproperty');
-    const ownersRes = await axiosAd.get('/users/owner');
-    const tenantsRes = await axiosAd.get('/users/tenant');
+    const ownersRes = await axiosAd.get('/admin/users/owner');
+    const tenantsRes = await axiosAd.get('/admin/users/tenant');
 
     return {
       totalProperties: propertyRes.data.totalItems || 0,
@@ -74,8 +74,8 @@ export const fetchProperties = async (): Promise<Property[]> => {
 export const fetchUsers = async (): Promise<UsersData> => {
   console.log('🔵 Fetching users...');
   try {
-    const ownersRes = await axiosAd.get('/users/owner');
-    const tenantsRes = await axiosAd.get('/users/tenant');
+    const ownersRes = await axiosAd.get('/admin/users/owner');
+    const tenantsRes = await axiosAd.get('/admin/users/tenant');
     console.log("owner",ownersRes)
 
     // For owners, map the nested structure:

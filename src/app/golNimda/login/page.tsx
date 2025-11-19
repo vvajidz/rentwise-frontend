@@ -47,7 +47,7 @@ const LoginPage = () => {
     setIsLoading(true);
 
     try {
-      const res = await axiosAd.post("/login", formData, { withCredentials: true });
+      const res = await axiosAd.post("/admin/login", formData, { withCredentials: true });
       login({
         id: res.data.admin._id,
         email: res.data.admin.email,
