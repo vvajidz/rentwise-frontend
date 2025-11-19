@@ -135,7 +135,7 @@ export default function TenantsPage() {
     
     console.log("Rejecting request with ID:", requestToReject);
     try {
-      const promise = api.delete(`/owner/delete/request/${requestToReject}`);
+      const promise = api.delete(`owner/delete/request/${requestToReject}`);
       
       toast.promise(promise, {
         loading: 'Rejecting request...',
